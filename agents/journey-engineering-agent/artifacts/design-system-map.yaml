@@ -1,0 +1,7 @@
+version: 0.1
+mappings: []
+
+rules:
+  prefer_canonical_components: true
+  allow_custom_components: false
+  require_rationale_for_unmapped: true

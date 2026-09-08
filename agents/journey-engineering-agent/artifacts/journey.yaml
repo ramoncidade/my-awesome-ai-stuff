@@ -1,0 +1,22 @@
+version: 0.1
+journey:
+  id: example-journey
+  name: Example Journey
+  channel: web
+  status: discovery
+
+screens: []
+
+transitions: []
+
+business_rules: []
+
+dependencies: []
+
+assumptions: []
+
+open_questions: []
+
+metadata:
+  confidence: low
+  sources: []
