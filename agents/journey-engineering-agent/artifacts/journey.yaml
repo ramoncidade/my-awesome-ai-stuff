@@ -1,4 +1,5 @@
-version: 0.1
+version: 0.2
+
 journey:
   id: example-journey
   name: Example Journey
@@ -7,7 +8,19 @@ journey:
 
 screens: []
 
-transitions: []
+transitions:
+  # Example:
+  # - id: transition-001
+  #   from: screen-a
+  #   action: continue
+  #   to: screen-b
+  #   resolution:
+  #     source: figma|inference|human
+  #     confidence: 0.95
+  #     qualitative_confidence: high
+  #     method: figma_prototype|model|human_confirmation
+  #   evidence: []
+  #   open_question: null
 
 business_rules: []
 
@@ -17,6 +30,12 @@ assumptions: []
 
 open_questions: []
 
+decisions: []
+
 metadata:
   confidence: low
   sources: []
+  confidence_policy:
+    high: 'explicitly documented, directly observed, or human-confirmed'
+    medium: 'strongly supported inference'
+    low: 'plausible interpretation requiring validation'
