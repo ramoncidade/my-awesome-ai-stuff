@@ -1,0 +1,45 @@
+version: 0.1
+
+routing:
+  default_policy:
+    deterministic_first: true
+    lowest_reliable_model: true
+    escalate_on_uncertainty: true
+    human_for_unresolved_critical_decisions: true
+
+  levels:
+    - level: 0
+      executor: tool
+      examples:
+        - extract_figma_metadata
+        - query_mcp
+        - compare_structured_tables
+        - validate_schema
+
+    - level: 1
+      executor: cheap-model
+      examples:
+        - classify_component
+        - normalize_name
+        - rank_design_system_candidates
+
+    - level: 2
+      executor: strong-model
+      examples:
+        - resolve_transition
+        - distinguish_screen_from_state
+        - reconcile_conflicting_evidence
+
+    - level: 3
+      executor: advanced-model
+      examples:
+        - reconstruct_complex_journey
+        - reason_about_missing_screen
+        - validate_cross_domain_consistency
+
+  escalation:
+    high_confidence_threshold: 0.90
+    review_threshold: 0.70
+    critical_unresolved_action: ask_human
+
+executions: []
