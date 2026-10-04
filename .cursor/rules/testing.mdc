@@ -1,0 +1,15 @@
+---
+description: Testing and verification expectations for code changes
+alwaysApply: true
+---
+
+# Testing and Verification
+
+- Identify the relevant test, lint, type-check, build, and static-analysis commands before changing code.
+- Add tests for business behavior, boundary conditions, and error paths proportionate to the change.
+- Prefer deterministic tests; isolate external systems and avoid real production services.
+- For bug fixes, add a regression test when practical.
+- Run the narrowest useful checks first, then broader checks when feasible.
+- Inspect failures and distinguish regressions from pre-existing failures.
+- Report the exact checks run and their outcomes. Clearly list checks not run and why.
+- Do not state that the implementation is production-ready based only on compilation or a single passing test.
