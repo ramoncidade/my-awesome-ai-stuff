@@ -1,0 +1,17 @@
+---
+description: Security and privacy requirements for implementation work
+applyTo: "**"
+---
+
+# Security and Privacy
+
+- Treat request parameters, headers, cookies, uploaded files, messages, and persisted user content as untrusted input.
+- Enforce authentication and authorization on the server for every protected operation.
+- Validate input with explicit schemas at trust boundaries.
+- Use parameterized queries or safe ORM APIs; never concatenate untrusted values into SQL or shell commands.
+- Store secrets in environment variables or a managed secret store, never in source control.
+- Do not log passwords, access tokens, session identifiers, payment data, or unnecessary personal information.
+- Use secure cookie attributes where cookies are used: HttpOnly, Secure in HTTPS environments, and an appropriate SameSite policy.
+- Consider CSRF, CORS, SSRF, injection, open redirects, file upload risks, and rate limiting when relevant to the feature.
+- Return safe error messages to clients; keep internal diagnostic details in appropriately protected logs.
+- Do not weaken security controls merely to make a test pass. If a security trade-off is unavoidable, explain it explicitly.
