@@ -1,0 +1,3 @@
+# Cursor self-hosted worker runtime. Identity and logs stay on the machine.
+/logs/
+/worker-data/
