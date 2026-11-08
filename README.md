@@ -2,35 +2,28 @@
 
 A laboratory for reusable AI agents, skills and agentic engineering patterns.
 
-## Journey Engineering Agent
+## Agents
 
-The first structured agent in this repository focuses on reconstructing and planning complex digital journeys from Figma and other engineering evidence.
+### Journey Engineering Agent
 
-### Why
+Reconstructs and plans complex digital journeys from Figma and other engineering evidence. Uses a canonical **Journey Model** between design and implementation.
 
-Traditional screen-to-code agents tend to analyze each screen independently. This agent introduces a canonical **Journey Model** between design and implementation so that screens, states, actions, transitions and decisions can be validated before code is generated.
+- [Agent instructions](agents/journey-engineering-agent/AGENTS.md)
+- [Agent overview](agents/journey-engineering-agent/README.md)
 
-### Structure
+### UX Product Engineer
 
-```text
-agents/journey-engineering-agent/
-├── AGENTS.md
-├── README.md
-├── artifacts/
-│   ├── decisions.md
-│   ├── design-system-map.yaml
-│   ├── journey-overview.md
-│   ├── journey.yaml
-│   └── open-questions.md
-└── skills/
-    ├── design-system-mapping/
-    ├── figma-analysis/
-    ├── journey-modeling/
-    └── journey-review/
-```
+Evolves existing digital products with an evidence-first, incremental approach. Focuses on task efficiency, operational clarity, error prevention, accessibility and implementation quality.
 
-### Workflow
+- [Agent instructions](agents/ux-product-engineer/AGENTS.md)
+- [Agent overview](agents/ux-product-engineer/README.md)
+- [Issue template](agents/ux-product-engineer/artifacts/issue-template.md)
+- [Friction register template](agents/ux-product-engineer/artifacts/friction-register.md)
 
-`Figma -> Evidence -> Journey Model -> Human Validation -> Design System Mapping -> Architecture -> Implementation`
+## Shared principles
 
-The agent is intentionally human-in-the-loop during discovery. Uncertainty is represented explicitly rather than converted into fabricated certainty.
+- Evidence before assumptions.
+- Deterministic work before LLM reasoning when practical.
+- Preserve uncertainty instead of manufacturing certainty.
+- Human decisions become durable project knowledge.
+- Measure product outcomes, not output volume.
