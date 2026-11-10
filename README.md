@@ -20,6 +20,17 @@ General-purpose agent for incrementally evolving existing digital products, with
 - [Issue template](agents/ux-product-engineer/artifacts/issue-template.md)
 - [Friction register template](agents/ux-product-engineer/artifacts/friction-register.md)
 
+
+### Execution triad
+
+General-purpose agents that collaborate under a single human-facing coordinator:
+
+- **[Coordinator](agents/coordinator/AGENTS.md)**: sole human interface, decision authority, delegation, escalation, Definition of Ready and Definition of Done.
+- **[Implementer](agents/implementer/AGENTS.md)**: simple, maintainable, framework-idiomatic implementation with tests and documentation.
+- **[Quality](agents/quality/AGENTS.md)**: decision tables, Boolean conditions, risk-based scenarios and independent regression verification. [Scenario matrix](agents/quality/artifacts/scenario-matrix.md).
+
+Workflow: **refine acceptance criteria → Quality designs scenarios → Implementer builds and tests → Quality verifies → Coordinator accepts or returns**. Ambiguous acceptance criteria block implementation. The coordinator may invoke any other agent available in the mission context.
+
 ## Shared principles
 
 - Evidence before assumptions.
