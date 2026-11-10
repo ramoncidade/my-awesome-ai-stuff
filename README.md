@@ -27,3 +27,12 @@ General-purpose agent for incrementally evolving existing digital products, with
 - Preserve uncertainty instead of manufacturing certainty.
 - Human decisions become durable project knowledge.
 - Measure product outcomes, not output volume.
+
+### Core delivery agents
+
+A general-purpose delivery trio with a single human-facing decision authority. The Coordinator delegates to any available specialist, the Implementer builds maintainable code/tests/docs, and Quality derives risk-based scenarios using Boolean decision modeling and other techniques. Ambiguous acceptance criteria block production implementation.
+
+- [Core delivery workflow](agents/core-delivery/README.md)
+- [Coordinator instructions](agents/coordinator/AGENTS.md)
+- [Implementer instructions](agents/implementer/AGENTS.md)
+- [Quality instructions](agents/quality/AGENTS.md)
