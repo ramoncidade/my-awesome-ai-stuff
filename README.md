@@ -23,11 +23,12 @@ General-purpose agent for incrementally evolving existing digital products, with
 
 ### Execution triad
 
-General-purpose agents that collaborate under a single human-facing coordinator:
+General-purpose agents that collaborate under a single human-facing coordinator. See the [shared delivery workflow](agents/core-delivery/README.md).
 
-- **[Coordinator](agents/coordinator/AGENTS.md)**: sole human interface, decision authority, delegation, escalation, Definition of Ready and Definition of Done.
-- **[Implementer](agents/implementer/AGENTS.md)**: simple, maintainable, framework-idiomatic implementation with tests and documentation.
-- **[Quality](agents/quality/AGENTS.md)**: decision tables, Boolean conditions, risk-based scenarios and independent regression verification. [Scenario matrix](agents/quality/artifacts/scenario-matrix.md).
+
+- **[Coordinator](agents/coordinator/AGENTS.md)** ([overview](agents/coordinator/README.md)): sole human interface, bounded decision authority, delegation, escalation and delivery accountability.
+- **[Implementer](agents/implementer/AGENTS.md)** ([overview](agents/implementer/README.md)): simple, maintainable, framework-idiomatic implementation with tests and documentation.
+- **[Quality](agents/quality/AGENTS.md)** ([overview](agents/quality/README.md)): Boolean decision modeling, risk-based scenarios, test design and independent regression verification. [Scenario matrix](agents/quality/artifacts/scenario-matrix.md).
 
 Workflow: **refine acceptance criteria → Quality designs scenarios → Implementer builds and tests → Quality verifies → Coordinator accepts or returns**. Ambiguous acceptance criteria block implementation. The coordinator may invoke any other agent available in the mission context.
 
