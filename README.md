@@ -32,6 +32,12 @@ General-purpose agents that collaborate under a single human-facing coordinator.
 
 Workflow: **refine acceptance criteria → Quality designs scenarios → Implementer builds and tests → Quality verifies → Coordinator accepts or returns**. Ambiguous acceptance criteria block implementation. The coordinator may invoke any other agent available in the mission context.
 
+### Platform specialist contract
+
+Define o contrato comum para especialistas de linguagem e plataforma: descoberta, diagnóstico, recomendação e handoff, com limites claros de autoridade e colaboração.
+
+- [Platform Specialist Contract](agents/platform-specialist-contract/README.md)
+
 ### Vue Platform Engineer
 
 Especialista generalista em Vue.js e seu ecossistema. Descobre a stack real de cada repositório antes de recomendar padrões ou implementar mudanças.
