@@ -32,6 +32,14 @@ General-purpose agents that collaborate under a single human-facing coordinator.
 
 Workflow: **refine acceptance criteria → Quality designs scenarios → Implementer builds and tests → Quality verifies → Coordinator accepts or returns**. Ambiguous acceptance criteria block implementation. The coordinator may invoke any other agent available in the mission context.
 
+### Vue Platform Engineer
+
+Especialista generalista em Vue.js e seu ecossistema. Descobre a stack real de cada repositório antes de recomendar padrões ou implementar mudanças.
+
+- [Agent instructions](agents/vue-platform-engineer/AGENTS.md)
+- [Agent overview](agents/vue-platform-engineer/README.md)
+- [Stack discovery template](agents/vue-platform-engineer/artifacts/stack-discovery.md)
+
 ## Shared principles
 
 - Evidence before assumptions.
